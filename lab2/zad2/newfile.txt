@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin2]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{times}
+\usepackage{anysize}
+
+\marginsize{1.5cm}{1.5cm}{1.5cm}{1.5cm}
+\sloppy 
+
+\theoremstyle{definition}
+\newtheorem{df}{Definicja}
+
+
+\begin{document}
+
+% \maketitle
+
+\section{Zbiory rozmyte}
+
+PojÄcie zbioru rozmytego zostaĹo wprowadzone przez L. A. Zadeha w 1965. Stosowanie zbiorĂłw rozmytych w systemach sterownia pozwala na dokĹadniejsze odwzorowanie pojÄÄ stosowanych przez ludzi, ktĂłre czÄsto sÂą subiektywne i nieprecyzyjne. Stopniowe przejÂście miÄdzy przynaleĹźnoÂściÂą do zbioru a jej brakiem pozwala nam uniknÂąÄ ÂścisĹej klasyfikacji elementĂłw, ktĂłra czÄsto jest niemoĹźliwa. Logika rozmyta jest uogĂłlnieniem logiki klasycznej. 
+
+Koncepcja zbiorĂłw rozmytych wyrosĹa na gruncie logicznego formalizowania pomysĹu, aby elementom zbioru przypisywaÄ tzw. stopieĹ przynaleĹźnoÂści do zbioru, okreÂślajÂący wartoÂśÄ prawdziwoÂści danego wyraĹźenia za pomocÂą liczb z przedziaĹu ???. 
+
+\begin{df}
+\textbf{Zbiorem rozmytym} ??? w pewnej niepustej przestrzeni ??? nazywamy zbiĂłr uporzÂądkowanych par:
+???
+gdzie:
+??? 
+jest \textbf{funkcjÂą przynaleĹźnoÂści} zbioru ???.
+WartoÂśÄ funkcji ??? w punkcie ??? \textbf{stopniem przynaleĹźnoÂści} ??? do zbioru ???.
+\end{df}
+
+
+Zbiory rozmyte ???, ???, ??? itd. wzglÄdem ??? nazywamy rĂłwnieĹź \textbf{podzbiorami rozmytymi} w ???.
+ZbiĂłr wszystkich zbiorĂłw rozmytych w ??? oznaczamy przez ???. Zbiory klasyczne moĹźna interpretowaÄ jako zbiory rozmyte z~funkcjÂą przynaleĹźnoÂści przyjmujÂącÂą tylko wartoÂści 0 i 1.
+
+\medskip
+\noindent
+{\bf PrzykĹad:} Niech ??? oznacza zbiĂłr niskich temperatur i niech ???. Funkcja przynaleĹźnoÂści moĹźe byÄ okreÂślona nastÄpujÂąco:
+???
+
+
+W przypadku, gdy ustalony zbiĂłr ??? jest skoĹczony, tzn. ???, funkcje przynaleĹźnoÂści zbiorĂłw rozmytych moĹźna przedstawiaÄ za pomocÂą tabelek, stosowaÄ zapis w postaci sumy:
+???
+(kreski uĹamkowe i znaki sumy naleĹźy rozumieÄ czysto symbolicznie) lub podawaÄ elementy zbioru w postaci par:
+???
+
+\end{document}

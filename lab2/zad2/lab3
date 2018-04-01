@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin2]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{times}
+\usepackage{anysize}
+
+\marginsize{1.5cm}{1.5cm}{1.5cm}{1.5cm}
+\sloppy 
+
+\theoremstyle{definition}
+\newtheorem{df}{Definicja}
+
+
+\begin{document}
+
+% \maketitle
+
+\section{Zbiory rozmyte}
+
+Pojęcie zbioru rozmytego zostało wprowadzone przez L. A. Zadeha w 1965. Stosowanie zbiorów rozmytych w systemach sterownia pozwala na dokładniejsze odwzorowanie pojęć stosowanych przez ludzi, które często s± subiektywne i nieprecyzyjne. Stopniowe przej¶cie między przynależno¶ci± do zbioru a jej brakiem pozwala nam unikn±ć ¶cisłej klasyfikacji elementów, która często jest niemożliwa. Logika rozmyta jest uogólnieniem logiki klasycznej. 
+
+Koncepcja zbiorów rozmytych wyrosła na gruncie logicznego formalizowania pomysłu, aby elementom zbioru przypisywać tzw. stopień przynależno¶ci do zbioru, okre¶laj±cy warto¶ć prawdziwo¶ci danego wyrażenia za pomoc± liczb z przedziału ???. 
+
+\begin{df}
+\textbf{Zbiorem rozmytym} ??? w pewnej niepustej przestrzeni ??? nazywamy zbiór uporz±dkowanych par:
+???
+gdzie:
+??? 
+jest \textbf{funkcj± przynależno¶ci} zbioru ???.
+Warto¶ć funkcji ??? w punkcie ??? \textbf{stopniem przynależno¶ci} ??? do zbioru ???.
+\end{df}
+
+
+Zbiory rozmyte ???, ???, ??? itd. względem ??? nazywamy również \textbf{podzbiorami rozmytymi} w ???.
+Zbiór wszystkich zbiorów rozmytych w ??? oznaczamy przez ???. Zbiory klasyczne można interpretować jako zbiory rozmyte z~funkcj± przynależno¶ci przyjmuj±c± tylko warto¶ci 0 i 1.
+
+\medskip
+\noindent
+{\bf Przykład:} Niech ??? oznacza zbiór niskich temperatur i niech ???. Funkcja przynależno¶ci może być okre¶lona następuj±co:
+???
+
+
+W przypadku, gdy ustalony zbiór ??? jest skończony, tzn. ???, funkcje przynależno¶ci zbiorów rozmytych można przedstawiać za pomoc± tabelek, stosować zapis w postaci sumy:
+???
+(kreski ułamkowe i znaki sumy należy rozumieć czysto symbolicznie) lub podawać elementy zbioru w postaci par:
+???
+
+\end{document}
