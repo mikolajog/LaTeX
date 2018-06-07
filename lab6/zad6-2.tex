@@ -1,0 +1,33 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,through,backgrounds,positioning,fit}
+\usetikzlibrary{shapes,arrows,shadows,calendar}
+\begin{document}
+\begin{algorithmic}
+\State $\triangleright$ \verb!ASSIGN!
+\State $\triangleright$ \verb!init(s) = s0!
+\State $\triangleright$ \verb!next(s) := case!
+\ForAll{$si \in s$}
+   \ForAll{$tk \in T$} 
+   		\State $V_{ik} \gets \emptyset$ 
+   		\ForAll{$sj \in s$} 
+   			\If {$(M_{i},S_{i})\overset{tk}{\longrightarrow}(M_{j},S_{j})$}
+   				\State $V_{ik} \gets V_{ik} \cup\{sj\}$
+   			\EndIf
+   		\EndFor
+   		\State $\triangleright$ \verb!s = si & action = tk:! $\{V_{ik}$ contents$\}$;
+   \EndFor
+\EndFor
+\State $\triangleright$ \verb!esac;!
+\end{algorithmic}
+
+\end{document}

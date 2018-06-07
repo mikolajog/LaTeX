@@ -1,0 +1,36 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,through,backgrounds,positioning,fit}
+\usetikzlibrary{shapes,arrows,shadows,calendar}
+\begin{document}
+\begin{algorithmic}[1]
+\State $V:$a set of verticles
+\State $E:$a set of edges
+\State $G \Leftarrow (V,E)$
+\State $H:$a max heap of $\bigtriangleup Q_{c_{x}, c_{y}}$
+\While {$H$ is not empty}
+	\State {extract $max \bigtriangleup Q_{c_{x}, c_{y}}$ from $H$, where any $c_{x}, c_{y} \in C$ }
+	\If {$max \bigtriangleup Q_{c_{x}, c_{y}} < 0$}
+			\State{break}
+	\EndIf
+	\State$c_{z} \Leftarrow c_{x} \cup c_{y}$
+	\State$C \Leftarrow C -  c_{x} - c_{y} + c_{z}$
+	\State$N_{c_{z}} \Leftarrow \{c_{k}|u_{m} \in c_{z},v_{n} \in c_{k},e_{mn} \in G(E)\}$
+	\For{$c_{k} \in N_{c_{z}}$}
+		\State $\bigtriangleup Q_{c_{k}, c_{z}} \Leftarrow Q(G, C-c_{k}-c_{z}+(c_{k}\cup c_{z})-Q(G,C)$
+	\EndFor
+\EndWhile
+	
+	 
+\end{algorithmic}
+
+\end{document}

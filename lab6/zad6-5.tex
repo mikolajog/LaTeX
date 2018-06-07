@@ -1,0 +1,73 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calendar} 
+\usetikzlibrary{calc,through,backgrounds,positioning,fit}
+\usetikzlibrary{shapes,arrows,shadows,calendar}
+\title{Beamer}
+\author[A.Iksiński]{A.Iksiński}
+\institute{Wydział EAIiIB\\Katedra Informatyki Stosowanej}
+\date[PL’06]{2015}
+\subject{Beamer}
+\usetheme{Darmstadt}
+
+\tikzstyle{place}=[shape=circle, draw, minimum height=10mm]
+\tikzstyle{trig}=[shape=circle, draw, dashed, minimum height=10mm]
+\tikzstyle{trans}=[shape=rectangle, draw, minimum height=6mm, minimum width=12mm]
+
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Zad 5.3}
+\centering
+\begin{tikzpicture}[scale=1,inner sep=0.4mm]
+\coordinate (A) at (0,0,4);
+\coordinate (B) at (0,0,0);
+\coordinate (C) at (4,0,0);
+\coordinate (D) at (4,0,4);
+\coordinate (E) at (2,5,2);
+\coordinate (K) at (0,0,2);
+\coordinate (L) at (4,0,2);
+
+\draw(A)node [left=3pt] {$A$}-- (B) node[above right=3pt] {$B$} ;
+\draw (C) node[above right=3pt] {$C$};
+\uncover<2->{\draw(A) -- (C) node[above right=3pt] {$C$}};
+\draw(A) -- (D)node [right=3pt] {$D$};
+\draw(B) -- (C);
+\uncover<2->{\draw(B) -- (D)};
+\draw(D) -- (C);
+\draw(A) -- (E);
+\draw(B) -- (E);
+\draw(C) -- (E);
+\draw(E) -- (E);
+
+
+\uncover<3->{\draw [green, fill=pink, fill opacity=0.2] (K)--(L)--(E)--(K)}; 
+\uncover<3->{\node at (K) [left] {$K$}};
+\uncover<3->{\node at (L) [right] {$L$}};
+\node at (E) [above] {$E$};
+
+\end{tikzpicture}
+\end{frame}
+%----------------------------------------
+\begin{frame}
+ \frametitle{Zad 5.5}
+\end{frame}
+%----------------------------------------
+
+\end{document}

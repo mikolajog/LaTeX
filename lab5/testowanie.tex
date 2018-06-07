@@ -1,0 +1,29 @@
+\documentclass{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[latin2]{inputenc}
+\usepackage[english]{babel}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{times}
+\usetikzlibrary{calc,through,backgrounds,positioning,fit}
+\usetikzlibrary{shapes,arrows,shadows}
+\usepackage{boxhandler}
+\usepackage{tabularx}
+
+\begin{document}
+
+\begin{table}[t]
+\caption{cos}
+\begin{tabular}{|c|c|c|c|c||c|}
+\hline
+ $t$&$a_{1}$&$a_{2}$&\dots &$a_{k}$&$c$\\ \hline \hline
+ $t_{1}$&$v_{1}^{1}$&$v_{2}^{1}$&\dots &$v_{k}^{1}$&$c_{1}$ \\ \hline
+ $t_{2}$&$v_{1}^{2}$&$v_{2}^{2}$&\dots &$v_{k}^{2}$&$c_{2}$ \\ \hline
+ \dots & \dots &\dots &\dots &\dots &\dots\\ \hline
+ $t_{n}$&$v_{1}^{n}$&$v_{2}^{n}$&\dots &$v_{k}^{n}$&$c_{n}$ \\ \hline
+ \dots & \dots &\dots &\dots &\dots &\dots \\ \hline
+\end{tabular}
+\end{table}
+
+\end{document}
